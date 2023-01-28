@@ -6,6 +6,7 @@ import SigninView from "@/views/SigninView.vue";
 import SignupView from "@/views/SignupView.vue";
 import WordsView from "@/views/WordsView.vue";
 import ProfileView from "@/views/ProfileView.vue";
+import BookView from "@/views/BookView";
 import store from "@/store";
 
 Vue.use(VueRouter);
@@ -26,27 +27,33 @@ const routes = [
   },
   {
     path: "/login",
-    name: "signin-view",
+    name: "signin",
     component: SigninView,
   },
   {
     path: "/signup",
-    name: "signup-view",
+    name: "signup",
     component: SignupView,
   },
   {
     path: "/words",
-    name: "words-view",
+    name: "words",
     component: WordsView,
   },
   {
     path: "/books",
-    name: "books-view",
+    name: "books",
     component: BooksView,
   },
   {
+    path: "/book/:id",
+    name: "book",
+    props: true,
+    component: BookView,
+  },
+  {
     path: "/profile",
-    name: "profile-view",
+    name: "profile",
     component: ProfileView,
     beforeEnter: authGuard,
   },

@@ -1,6 +1,8 @@
 <template>
   <v-container>
-    <h1 class="my-16">Words</h1>
+    <v-layout>
+      <h1 my-16>Words</h1>
+    </v-layout>
   </v-container>
 </template>
 

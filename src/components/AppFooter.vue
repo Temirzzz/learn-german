@@ -1,11 +1,9 @@
 <template>
   <v-footer dark padless>
     <v-card class="flex" flat tile>
-      <v-card-title class="teal">
+      <v-card-title class="primary">
         <strong class="subheading">Мы в социальных сетях!</strong>
-
         <v-spacer></v-spacer>
-
         <v-btn v-for="icon in icons" :key="icon.id" class="mx-4" dark icon>
           <v-icon size="24px">
             {{ icon.icon }}

@@ -1,6 +1,6 @@
 <template>
   <v-card class="overflow-hidden">
-    <v-app-bar color="teal" dark fixed app>
+    <v-app-bar color="primary" dark fixed app>
       <v-navigation-drawer
         v-model="drawer"
         app
@@ -24,7 +24,6 @@
           </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
-
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
         class="hidden-md-and-up"

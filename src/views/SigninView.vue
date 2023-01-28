@@ -2,8 +2,8 @@
   <v-container>
     <v-layout align-center justify-center>
       <v-flex xs12 sm8 md6>
-        <h1 class="my-16">Войти</h1>
-        <v-form class="mb-5" v-model="valid">
+        <h1 my-16>Войти</h1>
+        <v-form mb-5 v-model="valid">
           <v-text-field
             v-model.trim="email"
             :rules="emailRules"
